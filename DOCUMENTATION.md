@@ -2,12 +2,6 @@
 
 ---
 
-## Important Note Before You Start
-
-This project does **not** use PHP or XAMPP. It is built with **Node.js** (JavaScript/TypeScript) on the backend and **React** on the frontend, with a **PostgreSQL** database. This is a modern web stack that is different from PHP/MySQL but works similarly in concept. The migration and deployment steps below reflect the actual tools used.
-
----
-
 ## Table of Contents
 
 1. [System Overview](#1-system-overview)
@@ -604,14 +598,6 @@ pnpm --filter @workspace/db run push
 
 Then re-run the seed script to get the test accounts back.
 
-### Can I Use XAMPP?
-
-XAMPP bundles **MySQL**, not PostgreSQL. They are two different database systems and are not compatible. Your options are:
-
-- **Option A (Recommended):** Install PostgreSQL alongside XAMPP. They can run on the same PC on different ports.
-- **Option B:** Rewrite the database layer to use MySQL (significant work — requires changing all Drizzle schema files and the `DATABASE_URL` connection string format).
-
----
 
 ## 13. Environment Variables & Configuration
 
@@ -667,8 +653,10 @@ pnpm run typecheck
 | Admin | admin@ozone.edu.et | admin123 |
 | Cashier | cashier@ozone.edu.et | cashier123 |
 | Parent | parent@ozone.edu.et | parent123 |
+| Parent | lidya@gmail.com  | dureti1 |
+| cashier | dureti@gmail.com | dureti1
 
-The parent account is pre-linked to three students: Liya Bekele (Grade 10-A), Dawit Bekele (Grade 8-B), and Sara Bekele (Grade 11-C).
+The parent account is pre-linked to three students: Liya Bekele (Grade 10-A), Dawit Bekele (Grade 8-B), and Sara Bekele (Grade 11-C) and lidya is linked to student Amen (Grade 11 A)
 
 ---
 
